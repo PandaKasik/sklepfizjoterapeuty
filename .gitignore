@@ -9,3 +9,4 @@
 /install/
 /admin*/
 .env
+/vendor/
