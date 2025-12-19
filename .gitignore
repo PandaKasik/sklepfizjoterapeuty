@@ -1,0 +1,11 @@
+/var/
+/cache/
+/log/
+/img/
+/upload/
+/download/
+/config/settings.inc.php
+/config/parameters.php
+/install/
+/admin*/
+.env
