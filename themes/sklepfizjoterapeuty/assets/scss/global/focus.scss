@@ -1,0 +1,14 @@
+@mixin focus-white{
+    &:focus, &:focus:not(:focus-visible) {
+        outline: 3px solid $pc-white;
+        outline-offset: 2px;
+        box-shadow: none;
+    }
+}
+@mixin focus-dark{
+    &:focus, &:focus:not(:focus-visible) {
+        outline: 3px solid $pc-bg-black;
+        outline-offset: 2px;
+        box-shadow: none;
+    }
+}
