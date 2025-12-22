@@ -1,71 +1,35 @@
 @mixin btn-primary {
-    background-color: $pc-green-dark;
-    color: $pc-white;
-    border: none;   
-    border-radius: 1.5rem;
-    font-size: 1rem;
-    padding: 0.5rem 1.75rem;
-    cursor: pointer;
-    width: fit-content;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
+   background-color: $primary-700;
+    opacity: 1;
+    color: $neutral-50;
+    gap: 10px;
+    padding-top: 14px;
+    padding-right: 48px;
+    padding-bottom: 14px;
+    padding-left: 48px;
+    border: none;
 
-    &:hover, &:focus, &:active {
-        background-color: lighten($color: $pc-green-dark, $amount: 10%);
+
+    &:hover {
+        background-color: $accent-red;
+        color: $neutral-50;
+        text-decoration: none;
+        border: none;
     }
 
-    
 }
 
-@mixin btn-secondary {
-     background-color: $pc-gray-btn-bg;
-    color: $pc-black;
-    border: none;   
-    border-radius: 1.5rem;
-    font-size: 1rem;
-    padding: 0.5rem 1.75rem;
-    cursor: pointer;
-    width: fit-content;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
-
-    &:hover, &:focus, &:active {
-        background-color: darken($color: $pc-gray-btn-bg, $amount: 5%);
-         color: $pc-black;
-    }
-}
-
-@mixin btn-outline{
- background-color: transparent;
-    color: $pc-white;
-    border: 1px solid $pc-white;   
-    border-radius: 1.5rem;
-    font-size: 1rem;
-    padding: 0.5rem 1.75rem;
-    cursor: pointer;
-    width: fit-content;
-    font-weight: 600;
-    transition: background-color 0.6s ease;
-
-    &:hover, &:focus, &:active {
-        background-color: $pc-white;
-        color: $pc-bg-black;
-         border: 1px solid $pc-bg-black;  
-    }
-}
 
 
 
 .btn-primary {
     @include btn-primary;
 }
-.btn-secondary {
-    @include btn-secondary;
-}
-.btn-outline {
-    @include btn-outline;
-}
 
-.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
-     @include btn-primary;
+
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+    @include btn-primary;
 }
