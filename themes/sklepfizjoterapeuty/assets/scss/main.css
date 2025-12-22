@@ -17,13 +17,15 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
   padding-bottom: 14px;
   padding-left: 48px;
   border: none;
+  font-size: 15px;
 }
 
-.btn-primary:hover {
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background-color: #ff6464;
   color: #FFFFFF;
   text-decoration: none;
   border: none;
+  box-shadow: none;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active,
@@ -38,13 +40,19 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
   padding-bottom: 14px;
   padding-left: 48px;
   border: none;
+  font-size: 15px;
 }
 
-.btn-primary:not(:disabled):not(.disabled).active:hover,
+.btn-primary:not(:disabled):not(.disabled).active:hover, .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled).active:active,
 .btn-primary:not(:disabled):not(.disabled):active:hover,
-.show > .btn-primary.dropdown-toggle:hover {
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:active,
+.show > .btn-primary.dropdown-toggle:hover,
+.show > .btn-primary.dropdown-toggle:focus,
+.show > .btn-primary.dropdown-toggle:active {
   background-color: #ff6464;
   color: #FFFFFF;
   text-decoration: none;
   border: none;
+  box-shadow: none;
 }

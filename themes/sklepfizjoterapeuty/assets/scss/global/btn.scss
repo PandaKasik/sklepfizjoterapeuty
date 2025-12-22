@@ -8,13 +8,15 @@
     padding-bottom: 14px;
     padding-left: 48px;
     border: none;
+    font-size: 15px;
 
 
-    &:hover {
+    &:hover, &:focus, &:active {
         background-color: $accent-red;
         color: $neutral-50;
         text-decoration: none;
         border: none;
+        box-shadow: none
     }
 
 }
