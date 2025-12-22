@@ -1,0 +1,58 @@
+body {
+  padding-top: 0 !important;
+  font-family: "Poppins", sans-serif;
+}
+
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: "Instrument Sans", sans-serif;
+}
+
+.btn-primary {
+  background-color: #0069cc;
+  opacity: 1;
+  color: #FFFFFF;
+  gap: 10px;
+  padding-top: 14px;
+  padding-right: 48px;
+  padding-bottom: 14px;
+  padding-left: 48px;
+  border: none;
+  font-size: 15px;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: #ff6464;
+  color: #FFFFFF;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: #0069cc;
+  opacity: 1;
+  color: #FFFFFF;
+  gap: 10px;
+  padding-top: 14px;
+  padding-right: 48px;
+  padding-bottom: 14px;
+  padding-left: 48px;
+  border: none;
+  font-size: 15px;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:hover, .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled).active:active,
+.btn-primary:not(:disabled):not(.disabled):active:hover,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:active,
+.show > .btn-primary.dropdown-toggle:hover,
+.show > .btn-primary.dropdown-toggle:focus,
+.show > .btn-primary.dropdown-toggle:active {
+  background-color: #ff6464;
+  color: #FFFFFF;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+}
