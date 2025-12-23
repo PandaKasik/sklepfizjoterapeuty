@@ -23,15 +23,61 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 {block name='header_banner'}
-   
+    <div class="header-banner">
+        {hook h='displayBanner'}
+    </div>
 {/block}
 
 {block name='header_nav'}
     <nav class="header-nav border-bottom bg-light py-1 d-none d-md-block">
         <div class="container">
             <div class="row align-items-center">
-                {hook h='displayNav1'}
-                {hook h='displayNav2'}
+                <div class="col-3"></div>
+                <div class="col-9">
+                    <div class="recomendation">
+                        {l s='Polecany przez fizjoterapeutów' d='Shop.Theme.Global'}
+                    </div>
+                    <div class="contact-info">
+                        <div class="sociale">
+                            <div class="facebook">
+                                <a href="https://www.facebook.com/fizjoterapeuty"
+                                    title="Profil na Facebooku - otwiera się w nowej karcie" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img src="{$urls.theme_assets}img/header/fb-icon.png" alt="">
+                                </a>
+
+                            </div>
+                            <div class="instagram">
+                                <a href="https://www.instagram.com/fizjoterapeuty/"
+                                    title="Profil na Instagramie - otwiera się w nowej karcie" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img src="{$urls.theme_assets}img/header/instagram-icon.png" alt="">
+                                </a>
+
+                            </div>
+                            <div class="youtube">
+                                <a href="https://www.youtube.com/c/PortalFizjoterapeuty"
+                                    title="Profil na YouTube - otwiera się w nowej karcie" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img src="{$urls.theme_assets}img/header/yt-icon.png" alt="">
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="mail">
+                            <a href="mailto:sklep@fizjoterapeuty.pl">
+                                <img src="{$urls.theme_assets}img/header/mail-icon.png" alt="">
+                                {l s='sklep@fizjoterapeuty.pl'  d='Shop.Theme.Global'}
+                            </a>
+                        </div>
+                        <div class="phone-number">
+                            <a href="tel:+48513776935">
+                                <img src="{$urls.theme_assets}img/header/phone-icon.png" alt="">
+                                {l s='+48 513 776 935' d='Shop.Theme.Global'}
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -41,42 +87,33 @@
     <div class="js-header-top-wrapper">
 
         <div class="header-top js-header-top">
-            <div class="header-top__content ">
+            <div class="header-top__content pt-md-3 pb-md-0 py-2">
 
                 <div class="container">
 
                     <div class="row header-top__row">
 
-                        
-
-                        <div class="col-lg-2 col-xl-3 col-6 header-top__block header-top__block--logo">
-                            <a href="{$urls.pages.index}" aria-label="Strona główna Panda Coders">
-                                {images_block webpEnabled=$webpEnabled}
-                                    <img
-                                            {if !empty($shop.logo_details)}
-                                                src="{$shop.logo_details.src}"
-                                                width="60%"
-                                                height="{$shop.logo_details.height}"
-                                            {else}
-                                                src="{$shop.logo}"
-                                            {/if}
-                                            class="logo img-fluid"
-                                            alt="{$shop.name} {l s='logo' d='Shop.Theme.Global'}">
-                                {/images_block}
-                            </a>
-                        </div>
-                        <div class="col flex-grow-0 header-top__block header-top__block--menu-toggle d-block d-lg-none">
-                            <a
-                                    class="header-top__link"
-                                    rel="nofollow"
-                                    href="#"
-                                    data-toggle="modal"
-                                    data-target="#mobile_top_menu_wrapper"
-                            >
+                        <div class="col flex-grow-0 header-top__block header-top__block--menu-toggle d-block d-md-none">
+                            <a class="header-top__link" rel="nofollow" href="#" data-toggle="modal"
+                                data-target="#mobile_top_menu_wrapper">
                                 <div class="header-top__icon-container">
                                     <span class="header-top__icon material-icons">menu</span>
                                 </div>
                             </a>
+                        </div>
+
+                        <div class="col-md-3 col header-top__block header-top__block--logo">
+                        <div class="logo-wrapper">
+                              <a href="{$urls.pages.index}">
+                                {images_block webpEnabled=$webpEnabled}
+                                <img {if !empty($shop.logo_details)} src="{$shop.logo_details.src}"
+                                    width="{$shop.logo_details.width}" height="{$shop.logo_details.height}" {else}
+                                    src="{$shop.logo}" {/if} class="logo img-fluid"
+                                    alt="{$shop.name} {l s='logo' d='Shop.Theme.Global'}">
+                                {/images_block}
+                            </a>
+                        </div>
+                          
                         </div>
 
                         {hook h='displayTop'}

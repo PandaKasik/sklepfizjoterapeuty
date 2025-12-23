@@ -2,7 +2,24 @@ body {
     padding-top: 0 !important;
     font-family: "Poppins", sans-serif;
 
-    h1, h2, h3, h4, h5, h6 {
-         font-family: "Instrument Sans", sans-serif;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Instrument Sans", sans-serif;
     }
+
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+    }
+
 }
