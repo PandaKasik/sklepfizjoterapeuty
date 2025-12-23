@@ -34,7 +34,11 @@
     {/if}
   >
     <div class="header-top__icon-container">
-      <span class="header-top__icon material-icons">person</span>
+       <img
+        src="{$urls.theme_assets}img/header/user.png"
+        alt=""
+        aria-hidden="true"
+      >
     </div>
   </a>
 </div>
