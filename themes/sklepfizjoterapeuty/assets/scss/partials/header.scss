@@ -1,4 +1,5 @@
 #header {
+     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     .header-nav {
         background-color: $primary-700;
         padding: 8px 0;
@@ -66,13 +67,24 @@
     }
 
     .header-top {
+       border-bottom: none;
+
+
         .header-top__content {
             padding-bottom: 10px !important;
 
             .header-top__row {
                 position: relative;
+                flex-wrap: wrap;
+
+                @include breakpoint-up(md) {
+                    flex-wrap: nowrap;
+                }
+
+
 
                 .logo-wrapper {
+                    max-width: 220px;
 
 
                     @include breakpoint-up(md) {
@@ -82,6 +94,7 @@
                         position: absolute;
                         bottom: -25px;
                         left: 0;
+                        max-width: fit-content;
                     }
 
                     @include breakpoint-up(lg) {
@@ -92,6 +105,166 @@
                         bottom: -35px;
 
                     }
+                }
+
+                .header-top__block--logo{
+                    order: 1;
+                    margin-left: 15px;
+                    @include breakpoint-up(md) {
+                     
+                        margin-left: 0;
+                      
+                    }
+
+
+                }
+
+                .header-top__block--menu-toggle{
+                    order: 2;
+                    margin-right: 15px;
+
+                    .header-top__icon{
+                        font-weight: 2.5rem;
+                        color: $neutral-900;
+                    }
+
+                    
+                }
+
+                .top-wrapper{
+                    margin-top: 15px;
+                    display: flex;
+                    justify-content: space-around;
+                    flex-grow: 1;
+                    flex-direction: row;
+                    width: 100%;
+                    order: 3;
+
+                    @include breakpoint-up(md) {
+                        width: auto;
+                        margin-top: 0;
+                        justify-content: initial;
+                        order: 1;
+                    }
+
+                    .search-toggler svg {
+                        width: 33px;
+                        
+                        path{
+                            fill: $neutral-900;
+                        }
+                    }
+                }
+
+                #search-input {
+                    border: none;
+                    height: 50;
+                    justify-content: space-between;
+                    padding-top: 10px;
+                    padding-right: 18px;
+                    padding-bottom: 10px;
+                    padding-left: 18px;
+                    border-radius: 8px;
+                    background-color: $neutral-300;
+
+                    &::placeholder {
+                        color: $neutral-600;
+                        font-size: 0.9rem;
+                        font-weight: 400;
+                    }
+
+
+                }
+
+                .search-form__btn {
+                    svg {
+                        width: 25px;
+                        height: 22px;
+                    }
+
+                    &:hover,
+                    &:focus {
+                        background-color: darken($color: $neutral-300, $amount: 5%);
+                        box-shadow: none;
+                    }
+
+
+                }
+
+                .header-top__block {
+                    padding: 0;
+                }
+
+                .header-top__block--favorite {
+
+                    @include breakpoint-up(md){
+                          margin-left: 20px;
+                    }
+                  
+
+                    @include breakpoint-up(lg) {
+                        margin-left: 40px;
+                    }
+
+                    .header-top__link {
+
+                        svg {
+                            width: 30px;
+                            height: auto;
+                        }
+                    }
+                }
+
+                .header-top__block--user {
+                    .header-top__link {
+
+                        svg {
+                            width: 30px;
+                            height: auto;
+                        }
+                    }
+                }
+
+                .header-top__block--cart {
+                    .header-top__link {
+
+                        svg {
+                            width: 32px;
+                            height: auto;
+                        }
+                    }
+
+                    .header-top__cart-total {
+                        margin-left: 10px;
+                        @include lg-text;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        font-size: 16px;
+                        color: $neutral-900;
+                    }
+
+                    .header-top__badge {
+                        font-size: 0.7rem;
+                        background-color: $primary-700;
+                        right: -0.8em;
+                        font-weight: 400;
+
+                    }
+                }
+
+                .header-top__link:focus,
+                .header-top__link:hover {
+                    background-color: transparent;
+                    color: $primary-700;
+
+                    svg path,
+                    svg ellipse,
+                    svg circle,
+                    svg rect {
+                        stroke: $primary-700;
+                    }
+
+
                 }
             }
         }
