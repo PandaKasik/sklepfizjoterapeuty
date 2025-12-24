@@ -147,3 +147,34 @@ body .visually-hidden {
   width: auto;
   margin-right: 3px;
 }
+
+#header .header-top .header-top__content {
+  padding-bottom: 10px !important;
+}
+
+#header .header-top .header-top__content .header-top__row {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  #header .header-top .header-top__content .header-top__row .logo-wrapper {
+    width: 95%;
+    padding: 40px 20px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+  }
+}
+
+@media (min-width: 990px) {
+  #header .header-top .header-top__content .header-top__row .logo-wrapper {
+    padding: 30px;
+  }
+}
+
+@media (min-width: 1280px) {
+  #header .header-top .header-top__content .header-top__row .logo-wrapper {
+    bottom: -35px;
+  }
+}

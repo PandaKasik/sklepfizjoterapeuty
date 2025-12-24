@@ -64,4 +64,36 @@
             }
         }
     }
+
+    .header-top {
+        .header-top__content {
+            padding-bottom: 10px !important;
+
+            .header-top__row {
+                position: relative;
+
+                .logo-wrapper {
+
+
+                    @include breakpoint-up(md) {
+                        width: 95%;
+                        padding: 40px 20px;
+                        background-color: #fff;
+                        position: absolute;
+                        bottom: -25px;
+                        left: 0;
+                    }
+
+                    @include breakpoint-up(lg) {
+                        padding: 30px;
+                    }
+
+                    @include breakpoint-up(xl) {
+                        bottom: -35px;
+
+                    }
+                }
+            }
+        }
+    }
 }
