@@ -72,3 +72,78 @@ body .visually-hidden {
   border: none;
   box-shadow: none;
 }
+
+#header .header-nav {
+  background-color: #0069cc;
+  padding: 8px 0;
+}
+
+#header .header-nav .col-9 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header .header-nav .col-9 .recomendation {
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  display: none;
+}
+
+@media (min-width: 990px) {
+  #header .header-nav .col-9 .recomendation {
+    display: block;
+  }
+}
+
+#header .header-nav .col-9 .contact-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header .header-nav .col-9 .contact-info .sociale {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 0.8rem;
+}
+
+#header .header-nav .col-9 .contact-info .sociale a {
+  margin-left: 0.4rem;
+}
+
+#header .header-nav .col-9 .contact-info .sociale a img {
+  height: 20px;
+  width: 20px;
+}
+
+#header .header-nav .col-9 .contact-info .mail a,
+#header .header-nav .col-9 .contact-info .phone-number a {
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  margin-left: 1.2rem;
+}
+
+#header .header-nav .col-9 .contact-info .mail a:hover,
+#header .header-nav .col-9 .contact-info .phone-number a:hover {
+  text-decoration: underline;
+}
+
+#header .header-nav .col-9 .contact-info .mail a img,
+#header .header-nav .col-9 .contact-info .phone-number a img {
+  height: 15px;
+  width: auto;
+  margin-right: 3px;
+}

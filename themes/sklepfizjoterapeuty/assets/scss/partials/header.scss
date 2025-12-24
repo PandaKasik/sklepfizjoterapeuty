@@ -1,0 +1,67 @@
+#header {
+    .header-nav {
+        background-color: $primary-700;
+        padding: 8px 0;
+
+        .col-9 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .recomendation {
+                color: $neutral-50;
+                @include sm-text;
+                display: none;
+
+                @include breakpoint-up(lg) {
+                    display: block;
+                }
+            }
+
+            .contact-info {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                .sociale {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-right: 0.8rem;
+
+                    a {
+                        margin-left: 0.4rem;
+
+                        img {
+                            height: 20px;
+                            width: 20px;
+                        }
+                    }
+                }
+
+                .mail,
+                .phone-number {
+                    a {
+                        color: $neutral-50;
+                        @include sm-text;
+                        margin-left: 1.2rem;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+
+                        img {
+                            height: 15px;
+                            width: auto;
+                            margin-right: 3px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
