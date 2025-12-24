@@ -139,6 +139,7 @@
                     flex-direction: row;
                     width: 100%;
                     order: 3;
+                    align-items: center;
 
                     @include breakpoint-up(md) {
                         width: auto;
