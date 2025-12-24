@@ -125,5 +125,8 @@
             </div>
         </div>
     </div>
-    {hook h='displayNavFullWidth'}
+    <div class="pc_desktop_menu">
+
+        {hook h='displayNavPandaMenu' menu=1}
+    </div>
 {/block}
