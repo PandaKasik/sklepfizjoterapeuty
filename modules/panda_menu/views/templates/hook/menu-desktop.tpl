@@ -1,10 +1,15 @@
-<ul class="pc-navbar__menu menu-desktop menubar-navigation" role="menubar">
+<ul class="pc-navbar__menu menu-desktop menubar-navigation " role="menubar">
 
     {foreach from=$menu_elements item=row}
         {if $row['childs']}
             <li role="none">
-                <a role="menuitem" aria-haspopup="true" aria-expanded="false">
+                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="{$row['url']}">
                     {$row['title']}
+                    <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.75 0.750008L5.25 4.75001L9.75 0.750008" stroke="black" stroke-width="1.5"
+                            stroke-linecap="round" />
+                    </svg>
+
                 </a>
 
                 <ul id="menu-element-{$row['id']}" class="menu-desktop__submenu" role="menu" aria-label="{$row['title']}">

@@ -343,3 +343,65 @@ body .visually-hidden {
 #header .header-top .header-top__content .header-top__row .header-top__link:hover svg rect {
   stroke: #0069cc;
 }
+
+#header .pc_desktop_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header .pc_desktop_menu .pc-navbar__menu {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 8px;
+}
+
+#header .pc_desktop_menu .pc-navbar__menu li {
+  margin-right: 0.8rem;
+  padding: 0.4rem 0.6rem;
+  border: none !important;
+}
+
+#header .pc_desktop_menu .pc-navbar__menu li a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #1A1A1C;
+  font-size: 1rem;
+  border: none !important;
+}
+
+#header .pc_desktop_menu .pc-navbar__menu li a:hover {
+  color: #0069cc;
+  border: none !important;
+  text-decoration: none;
+}
+
+#header .pc_desktop_menu .pc-navbar__menu li a:hover svg path {
+  stroke: #0069cc;
+}
+
+#header .pc_desktop_menu .pc-navbar__menu li a svg {
+  margin-left: 6px;
+}
+
+#header .pc_desktop_menu .pc-navbar__menu li:last-of-type {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+#header .pc_desktop_menu .pc-navbar__menu li:first-of-type {
+  padding-left: 0;
+}
+
+#header .pc_desktop_menu .menu-desktop__submenu {
+  display: none !important;
+}
+
+#header a:focus,
+#header a:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}

@@ -125,8 +125,9 @@
             </div>
         </div>
     </div>
-    <div class="pc_desktop_menu">
+    <div id="menu_desktop" class="pc_desktop_menu container _desktop_menu_desktop">
 
         {hook h='displayNavPandaMenu' menu=1}
+        {hook h='displayNavPandaMenu' menu=2}
     </div>
 {/block}
