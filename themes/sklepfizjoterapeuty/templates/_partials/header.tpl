@@ -94,9 +94,27 @@
                     <div class="row header-top__row">
 
                         <div class="col flex-grow-0 header-top__block header-top__block--menu-toggle d-block d-md-none">
-                            {hook h='displayNavPandaMenuMobile'}
-                        </div>
 
+                            <div id="burger-btn">
+
+                                <a class="header-top__link" rel="nofollow" href="#">
+                                    <div class="header-top__icon-container">
+
+                                        <svg width="28" height="20" viewBox="0 0 28 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" y="0.5" width="27" height="3" rx="1.5" fill="#181F26" />
+                                            <rect x="0.5" y="8.5" width="27" height="3" rx="1.5" fill="#181F26" />
+                                            <rect x="0.5" y="16.5" width="27" height="3" rx="1.5" fill="#181F26" />
+                                        </svg>
+
+
+                                    </div>
+
+                                    {hook h='displayNavPandaMenuMobile' menu=1}
+                                </a>
+
+                            </div>
+                        </div>
                         <div class="col-md-3 col header-top__block header-top__block--logo">
                             <div class="logo-wrapper">
                                 <a href="{$urls.pages.index}">

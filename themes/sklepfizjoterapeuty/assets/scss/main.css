@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   padding-top: 0 !important;
   font-family: "Poppins", sans-serif;
@@ -404,4 +405,100 @@ body .visually-hidden {
 #header a:focus-visible {
   outline: none !important;
   box-shadow: none !important;
+}
+
+#burger-btn:has(.menu-dialog.is-open) #_desktop_search_from {
+  display: none !important;
+}
+
+#burger-btn .menu-dialog {
+  width: 100vw;
+  margin: 0 0 0 0;
+  top: 155px;
+  position: absolute;
+  border-radius: 0;
+  z-index: 1000;
+  left: 0;
+  background: #fff;
+}
+
+#burger-btn .menu-dialog .menu-dialog__navigation {
+  padding: 20px !important;
+  border-radius: 0 !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* delikatny cień dodatkowy */
+}
+
+#burger-btn .menu-dialog .panda-accordion__trigger .panda-accordion__trigger__text {
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#burger-btn .menu-dialog .panda-accordion__trigger .panda-accordion__trigger--icon {
+  background-image: url(../img/icons/arrow-confi.svg);
+  width: 13px;
+  height: 8px;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 8px;
+  transform: rotate(0deg);
+  /* domyślnie strzałka w dół */
+  transition: transform 0.3s ease;
+}
+
+#burger-btn .menu-dialog .panda-accordion__trigger:hover .panda-accordion__trigger__text {
+  color: #007AFF;
+}
+
+#burger-btn .menu-dialog .panda-accordion__trigger[aria-expanded="true"] .panda-accordion__trigger--icon {
+  transform: rotate(180deg);
+}
+
+#burger-btn .menu-dialog .menu-dialog-submenu {
+  padding-left: 25px;
+}
+
+#burger-btn .menu-dialog .menu-dialog-submenu .single-link--text {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+#burger-btn .menu-dialog .menu-dialog-submenu .menu-dialog-submenu__item {
+  margin-bottom: 5px;
+}
+
+#burger-btn .menu-dialog .menu-dialog-submenu .menu-dialog-submenu__item:hover .single-link--text {
+  color: #007AFF;
+}
+
+#burger-btn .menu-dialog .menu-dialog-submenu .menu-dialog-submenu__item:hover .single-link {
+  text-decoration: none;
+}
+
+#burger-btn .header-top__block--menu-toggle {
+  position: static !important;
+}
+
+.menu-dialog {
+  display: none;
+}
+
+.menu-dialog .header-top__link {
+  display: none;
+}
+
+.menu-dialog.is-open {
+  display: block !important;
+}
+
+.panda-accordion__panel {
+  display: none;
+}
+
+.panda-accordion__panel.open {
+  display: block;
 }
