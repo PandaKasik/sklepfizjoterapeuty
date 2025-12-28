@@ -94,12 +94,7 @@
                     <div class="row header-top__row">
 
                         <div class="col flex-grow-0 header-top__block header-top__block--menu-toggle d-block d-md-none">
-                            <a class="header-top__link" rel="nofollow" href="#" data-toggle="modal"
-                                data-target="#mobile_top_menu_wrapper">
-                                <div class="header-top__icon-container">
-                                    <span class="header-top__icon material-icons">menu</span>
-                                </div>
-                            </a>
+                            {hook h='displayNavPandaMenuMobile'}
                         </div>
 
                         <div class="col-md-3 col header-top__block header-top__block--logo">
